@@ -29,11 +29,11 @@ const getFileExtension = data => {
 };
 
 const uuid = () => {
-  var id = "";
-  var possible =
+  let id = "";
+  let possible =
     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 
-  for (var i = 0; i < 5; i++)
+  for (let i = 0; i < 5; i++)
     id += possible.charAt(Math.floor(Math.random() * possible.length));
 
   return id;
