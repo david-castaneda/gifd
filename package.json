@@ -8,8 +8,7 @@
     "test": "babel ./src --experimental --source-maps-inline -d ./dist && node ./dist/lib/test"
   },
   "dependencies": {
-    "gm": "^1.23.1",
-    "uuid": "^3.3.2"
+    "gm": "^1.23.1"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

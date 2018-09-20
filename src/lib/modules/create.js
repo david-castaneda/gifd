@@ -1,6 +1,6 @@
 import gm from "gm";
-import uuid from "uuid/v1";
 import { resolve as path_resolve } from "path";
+import { uuid } from "./fileUtils";
 
 const getImageInfo = async path => {
   const { bitmap } = await Jimp.read(path);

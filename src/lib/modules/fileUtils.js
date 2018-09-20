@@ -1,5 +1,3 @@
-import uuid from "uuid/v1";
-
 import https from "https";
 import { writeFile, unlink } from "fs";
 import { fileResponses } from "./operationResponses";
@@ -28,6 +26,17 @@ const getFileExtension = data => {
   }
 
   throw new Error(fileResponses.invalidFileExtension);
+};
+
+const uuid = () => {
+  var id = "";
+  var possible =
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+  for (var i = 0; i < 5; i++)
+    id += possible.charAt(Math.floor(Math.random() * possible.length));
+
+  return id;
 };
 
 const replaceEncoder = (data, ext) => {
@@ -105,4 +114,4 @@ const remove = path =>
     });
   });
 
-export { save, cleanup };
+export { save, cleanup, uuid };
