@@ -1,4 +1,4 @@
-# gf [![NPM Version](https://img.shields.io/npm/v/gm.svg?style=flat)](https://www.npmjs.org/package/gf)
+# gf [![NPM Version](https://img.shields.io/npm/v/gm.svg?style=flat)](https://www.npmjs.org/package/node-gifd)
 
 node library for gif creation
 
